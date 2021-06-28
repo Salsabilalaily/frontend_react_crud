@@ -24,7 +24,7 @@ const NavbarComp = (props) => {
     return (
         <div>
             <Navbar className="navbar-dark bg-dark" light expand="md">
-                <NavbarBrand to="/">reactstrap</NavbarBrand>
+                <NavbarBrand to="/">Picktify</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
@@ -32,7 +32,7 @@ const NavbarComp = (props) => {
                             <NavLink to="/" className="nav-link">Home</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to="/about" className="nav-link">About</NavLink>
+                            <NavLink to="/about" className="nav-link">Explore</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink to="/mahasiswa" className="nav-link">Mahasiswa</NavLink>

@@ -14,6 +14,12 @@ import { CartContext } from './CartContext';
 import ProdukComp from './Component/Hooks/Functional/ProdukComp';
 import HookReducer from './Component/Hooks/Functional/HookReducer';
 import Tagihan from './Component/Hooks/Functional/Tagihan';
+import DetailComp from './Component/Fungsional/DetailComp';
+
+import Home from './Component/pages/Home';
+import Services from './Component/pages/Services';
+import Products from './Component/pages/Products';
+import SignUp from './Component/pages/SignUp';
 
 //import DetailComp from './Component/Fungsional/DetailComp';
 //import BootstrapComp from './Component/Class/BootstrapComp';
@@ -66,6 +72,7 @@ const App=()=> {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/about" component={AboutPage} />
+          <Route exact path="/detail/:id" component={DetailComp} />
           <Route exact path="/mahasiswa" component={ListComp} />
           <Route exact path="/mahasiswa/tambah" component={TambahComp} />
           <Route exact path="/mahasiswa/edit" component={EditComp} />
@@ -76,6 +83,11 @@ const App=()=> {
           <Route exact path="/produk" component={ProdukComp} />
           <Route exact path="/reducer" component={HookReducer} />
           <Route exact path="/tagihan" component={Tagihan} />
+
+          <Route path='/' exact component={Home} />
+          <Route path='/services' component={Services} />
+          <Route path='/products' component={Products} />
+          <Route path='/sign-up' component={SignUp} />
 
           {/* <Route exact path="/detail/:id" component={DetailComp} /> */}
         </Switch>
